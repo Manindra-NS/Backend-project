@@ -1,17 +1,15 @@
 // require('dotenv').config({path: './.env'});
 import dotenv from "dotenv";
-import connectDB from "./db";
+import connectDB from "./db/index.js";
 
 dotenv.config({ path: "./.env" });
 
 connectDB();
 
-
-
                     // 1st approach to connect to the database and start the server//
 // import express from"express";
 // import mongoose from "mongoose";
-// import { DB_NAME } from "./constants";
+// import { DB_NAME } from "./constants.js";
 // const app=express()
 
 // ;(async()=> {
